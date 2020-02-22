@@ -124,8 +124,14 @@ table {
 }
 body {
   font-size: 62.5%;
-  max-width: 100%;
 }
 .container {
-  width: 90%;
+  margin: 0 auto;
+  max-width: 1012px;
+}
+h3 {
+  font-size: 2.6em;
+}
+p {
+  font-size: 1.9em;
 }
