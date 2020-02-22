@@ -1,15 +1,26 @@
 .container{
     .planner{
-
+        border-right: 1px solid red;
+        border-left: 1px solid @hilights;
         .planner-imgs{
+            display:flex; 
+            justify-content: space-around;
+            margin-top: 3%;
 
-        }
+            img{
+                width: 30%;
+            }// this closes img
+
+        }// this closes .planner-imgs
         .planner-text{
+            margin: 3% 2%;
             h2{
-
+                text-decoration: underline;
+                font-size: 2rem;
+                margin-bottom: 2%;
             }
             p {
-
+                line-height: 1.5rem;
             }
         }
     }
@@ -61,19 +72,22 @@
     }
 
     .save {
-
+        margin:3% 2%;
+        display:flex;
+        align-items:center;
         img{
-
+            width:40%;
         }
 
         div {
-
+            margin-left: 2%;
             h3{
-
+                margin-bottom: 3%;
+                text-decoration: underline;
             }
 
             p {
-
+                line-height: 1.5rem;
             }
 
         } //end div
