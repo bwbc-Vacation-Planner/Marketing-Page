@@ -135,13 +135,33 @@ h3 {
 p {
   font-size: 1.9em;
 }
+img {
+  border-radius: 15px;
+}
+.container .booking {
+  margin: 2rem 0;
+}
+.container .booking .bookingimg {
+  width: 48%;
+  display: block;
+}
+.container .booking .bookingimg img {
+  max-width: 100%;
+  text-align: center;
+  object-fit: fill;
+}
 .container .booking .top-row {
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-around;
 }
+.container .booking .top-row .top-row-text {
+  width: 48%;
+}
 .container .booking .bottom-row {
   display: flex;
-  flex-direction: row-reverse;
   justify-content: space-around;
+}
+.container .booking .bottom-row .bottom-row-text {
+  width: 48%;
 }
