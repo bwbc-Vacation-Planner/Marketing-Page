@@ -2,18 +2,37 @@
     .planner{
         border-right: 1px solid red;
         border-left: 1px solid @hilights;
+
         .planner-imgs{
             display:flex; 
             justify-content: space-around;
             margin-top: 3%;
 
+            @media @mobile{
+                flex-direction: column;
+                align-items:center;
+            }//this closes media query inside of .planner-imgs
+
             img{
                 width: 30%;
+
+                @media @mobile{
+                    margin: 3% 0;
+                    width: 50%;
+                }//this closes media 
+
             }// this closes img
 
         }// this closes .planner-imgs
+        
         .planner-text{
             margin: 3% 2%;
+
+            @media @mobile{
+                display:flex; 
+                flex-direction: column;
+                align-items:center;
+            }
             h2{
                 text-decoration: underline;
                 font-size: 2rem;
@@ -21,9 +40,17 @@
             }
             p {
                 line-height: 1.5rem;
-            }
-        }
-    }
+
+                @media @mobile{
+                    width:80%;
+                    margin:2% 0;
+                }// this closes media query inside of p
+
+            }//this close p
+
+        }//this closes .planner-text
+
+    }// this closes .planner section
 
     .booking{
         border-left: 3px solid red;
@@ -92,20 +119,43 @@
         margin:3% 2%;
         display:flex;
         align-items:center;
+
+        @media @mobile{
+            flex-direction:column;
+        }// this closes media query inside of .save
+
         img{
             width:40%;
-        }
+
+            @media @mobile{
+                width:60%;
+            }// this closes media query inside of img
+
+        }// this closes img
 
         div {
             margin-left: 2%;
+
+            @media @mobile{
+                display:flex;
+                flex-direction:column; 
+                align-items:center;
+            }// this closes media query inside of div
+
             h3{
                 margin-bottom: 3%;
                 text-decoration: underline;
-            }
+            }// this closes h3
 
             p {
                 line-height: 1.5rem;
-            }
+
+                @media @mobile{
+                    width:80%;
+                    margin: 2% 0;
+                }// this closes media query inside of p
+
+            }// this closes p
 
         } //end div
 
