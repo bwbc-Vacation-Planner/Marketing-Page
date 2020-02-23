@@ -196,6 +196,12 @@ header nav a:hover {
   border-right: 1px solid red;
   border-left: 1px solid #FF8000;
 }
+@media (max-width: 500px) {
+  .container .planner {
+    border-right: none;
+    border-left: none;
+  }
+}
 .container .planner .planner-imgs {
   display: flex;
   justify-content: space-around;

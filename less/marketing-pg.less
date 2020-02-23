@@ -2,29 +2,44 @@
     .planner{
         border-right: 1px solid red;
         border-left: 1px solid @hilights;
+        
+
+        @media @mobile{
+            border-right:none;
+            border-left:none;
+        }
+
         .planner-imgs{
             display:flex; 
             justify-content: space-around;
             margin-top: 3%;
+
             @media @mobile{
                 flex-direction: column;
                 align-items:center;
             }
+
             img{
                 width: 30%;
+
                 @media @mobile{
                     margin: 3% 0;
                     width: 50%;
                 }
+
             }// this closes img
+
         }// this closes .planner-imgs
+
         .planner-text{
             margin: 3% 2%;
+
             @media @mobile{
                 display:flex; 
                 flex-direction: column;
                 align-items:center;
             }
+
             h2{
                 text-decoration: underline;
                 font-size: 2rem;
@@ -32,20 +47,25 @@
             }
             p {
                 line-height: 1.5rem;
+
                 @media @mobile{
                     width:80%;
                     margin:2% 0;
                 }
+
             }
         }
     }
+
     .booking{
+        
         border-left: 3px solid red;
         border-right: 3px solid @hilights;
         padding: 1.8rem 0;
         @media @tablet{
             width: 90%;
             margin: 1rem auto;
+            
         }
         .bookingimg{
             @media @tablet{
@@ -64,15 +84,20 @@
                 font-size: 1rem;
             }
         }
+        
         margin: 2rem 0;
+
         .top-row{
+            
             display: flex;
+            
             justify-content: space-around;
             margin: 0 auto 3rem auto;
             width: 98%;
             @media @tablet{
                 flex-wrap: wrap;  
             }
+            
             .top-row-text{
                 @media @tablet{
                     width: 100%;
@@ -81,8 +106,12 @@
                 h3 {
                     margin-bottom: 2rem;
                 }
+
+
             } //ends top-row-text
+        
         } //ends top-row
+
         .bottom-row{
             display: flex;
             justify-content: space-around;
@@ -92,6 +121,7 @@
             @media @tablet{
                 flex-wrap: wrap;  
             }
+            
             .bottom-row-text{
                 width:48%;
                 @media @tablet{
@@ -100,56 +130,82 @@
                 h3{
                     margin-bottom: 2rem;
                 }
+
                 p {
+
                 }
+
             } //ends bottom-row-text
+
         } //ends bottom-row
     }
+
     .save {
         margin:3% 2%;
         display:flex;
         align-items:center;
+
         @media @mobile{
             flex-direction:column;
         }
+
         img{
             width:40%;
+
             @media @mobile{
                 width:60%;
             }
+
         }
+
         div {
             margin-left: 2%;
+
             @media @mobile{
                 display:flex;
                 flex-direction:column; 
                 align-items:center;
             }
+
             h3{
                 margin-bottom: 3%;
                 text-decoration: underline;
             }
+
             p {
                 line-height: 1.5rem;
+
                 @media @mobile{
                     width:80%;
                     margin: 2% 0;
                 }
+
             }
+
         } //end div
+
     }//end save
+
+
     .CTA {
+        
+        
+        
         .marginCentered();
         text-align: center;
         width: 480px;
+
         @media @mobile{
             width:95%;
         }
+
         button{
             font-size: 3em;
             height: 4rem;
             background-color: white;
             color: @font-color;
+            
+           
             width: 100%;
             border-radius: 15px;
             display:flex;
@@ -164,4 +220,5 @@
         margin: 2rem;
         text-align: center;
     }
+
 }
