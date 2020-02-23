@@ -13,31 +13,14 @@
             justify-content: space-around;
             margin-top: 3%;
 
-            @media @mobile{
-                flex-direction: column;
-                align-items:center;
-            }//this closes media query inside of .planner-imgs
-
             img{
                 width: 30%;
-
-                @media @mobile{
-                    margin: 3% 0;
-                    width: 50%;
-                }//this closes media 
-
             }// this closes img
 
         }// this closes .planner-imgs
 
         .planner-text{
             margin: 3% 2%;
-
-            @media @mobile{
-                display:flex; 
-                flex-direction: column;
-                align-items:center;
-            }
             h2{
                 text-decoration: underline;
                 font-size: 2rem;
@@ -45,36 +28,60 @@
             }
             p {
                 line-height: 1.5rem;
-
-                @media @mobile{
-                    width:80%;
-                    margin:2% 0;
-                }// this closes media query inside of p
-
-            }//this close p
-
-        }//this closes .planner-text
-
-    }// this closes .planner section
+            }
+        }
+    }
 
     .booking{
+        
+        border-left: 3px solid red;
+        border-right: 3px solid @hilights;
+        padding: 1.8rem 0;
+        @media @tablet{
+            width: 90%;
+            margin: 1rem auto;
+            
+        }
+        .bookingimg{
+            @media @tablet{
+                width: 100%;
+                margin-bottom: 1rem;
+            }
+            width:48%;
+            display: block;
+            img{
+                width: 100%;
+                text-align: center;
+                object-fit: cover;
+                height: 14rem;
+            }
+            p {
+                font-size: 1rem;
+            }
+        }
+        
+        margin: 2rem 0;
 
         .top-row{
+            
             display: flex;
-            flex-direction: row-reverse;
+            
             justify-content: space-around;
-            img{
-
+            margin: 0 auto 3rem auto;
+            width: 98%;
+            @media @tablet{
+                flex-wrap: wrap;  
             }
+            
             .top-row-text{
-
+                @media @tablet{
+                    width: 100%;
+                }
+                width: 48%;  
                 h3 {
-
+                    margin-bottom: 2rem;
                 }
 
-                p {
-
-                }
 
             } //ends top-row-text
         
@@ -82,16 +89,21 @@
 
         .bottom-row{
             display: flex;
-            flex-direction: row-reverse;
             justify-content: space-around;
-            img {
-
+            flex-direction: row-reverse;
+            margin: 0 auto 1.8rem auto;
+            width: 98%;
+            @media @tablet{
+                flex-wrap: wrap;  
             }
-
+            
             .bottom-row-text{
-
+                width:48%;
+                @media @tablet{
+                    width: 100%;  
+                }
                 h3{
-
+                    margin-bottom: 2rem;
                 }
 
                 p {
@@ -107,53 +119,57 @@
         margin:3% 2%;
         display:flex;
         align-items:center;
-
-        @media @mobile{
-            flex-direction:column;
-        }// this closes media query inside of .save
-
         img{
             width:40%;
-
-            @media @mobile{
-                width:60%;
-            }// this closes media query inside of img
-
-        }// this closes img
+        }
 
         div {
             margin-left: 2%;
-
-            @media @mobile{
-                display:flex;
-                flex-direction:column; 
-                align-items:center;
-            }// this closes media query inside of div
-
             h3{
                 margin-bottom: 3%;
                 text-decoration: underline;
-            }// this closes h3
+            }
 
             p {
                 line-height: 1.5rem;
-
-                @media @mobile{
-                    width:80%;
-                    margin: 2% 0;
-                }// this closes media query inside of p
-
-            }// this closes p
+            }
 
         } //end div
 
     }//end save
 
-    .CTA {
-        button{
 
+    .CTA {
+        
+        
+        
+        .marginCentered();
+        text-align: center;
+        width: 480px;
+        @media @mobile{
+            width:95%;
         }
 
+        button{
+            font-size: 3em;
+            height: 4rem;
+            background-color: white;
+            color: @font-color;
+            
+           
+            width: 100%;
+            border-radius: 15px;
+            display:flex;
+            justify-content: space-around;
+            &:hover {
+                color: @hilights;
+                box-shadow: 3px 3px 10px 5px @font-color;
+            }
+        }
     }//end .CTA
+    footer{
+        margin: 2rem;
+        text-align: center;
+    }
 
 }
