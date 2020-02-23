@@ -58,7 +58,7 @@
         .top-row{
             
             display: flex;
-            flex-direction: row-reverse;
+            
             justify-content: space-around;
             margin: 0 auto 3rem auto;
             width: 98%;
@@ -83,6 +83,7 @@
         .bottom-row{
             display: flex;
             justify-content: space-around;
+            flex-direction: row-reverse;
             margin: 0 auto 1.8rem auto;
             width: 98%;
             @media @tablet{
@@ -145,17 +146,17 @@
         button{
             font-size: 3em;
             height: 4rem;
-            background-color: @font-color;
-            color: @hilights;
+            background-color: white;
+            color: @font-color;
             
-            box-shadow: 1px 3px @bg-color;
+           
             width: 100%;
             border-radius: 15px;
             display:flex;
             justify-content: space-around;
             &:hover {
-                color: white;
-                box-shadow: 3px 3px 3px 3px @bg-color;
+                color: @hilights;
+                box-shadow: 3px 3px 10px 5px @font-color;
             }
         }
     }//end .CTA
