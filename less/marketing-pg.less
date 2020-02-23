@@ -113,10 +113,29 @@
 
 
     .CTA {
+        
+        
+        
+        .marginCentered();
+        text-align: center;
+        width: 480px;
+
         button{
-
+            font-size: 3em;
+            height: 4rem;
+            background-color: @font-color;
+            color: @hilights;
+            
+            box-shadow: 1px 3px @bg-color;
+            width: 100%;
+            border-radius: 15px;
+            display:flex;
+            justify-content: space-around;
+            &:hover {
+                color: white;
+                box-shadow: 3px 3px 3px 3px @bg-color;
+            }
         }
-
     }//end .CTA
     footer{
         margin: 2rem;
