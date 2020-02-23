@@ -201,30 +201,11 @@ header nav a:hover {
   justify-content: space-around;
   margin-top: 3%;
 }
-@media (max-width: 500px) {
-  .container .planner .planner-imgs {
-    flex-direction: column;
-    align-items: center;
-  }
-}
 .container .planner .planner-imgs img {
   width: 30%;
 }
-@media (max-width: 500px) {
-  .container .planner .planner-imgs img {
-    margin: 3% 0;
-    width: 50%;
-  }
-}
 .container .planner .planner-text {
   margin: 3% 2%;
-}
-@media (max-width: 500px) {
-  .container .planner .planner-text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
 }
 .container .planner .planner-text h2 {
   text-decoration: underline;
@@ -234,21 +215,27 @@ header nav a:hover {
 .container .planner .planner-text p {
   line-height: 1.5rem;
 }
-@media (max-width: 500px) {
-  .container .planner .planner-text p {
-    width: 80%;
-    margin: 2% 0;
-  }
-}
 .container .booking {
   border-left: 3px solid red;
   border-right: 3px solid #FF8000;
   padding: 1.8rem 0;
   margin: 2rem 0;
 }
+@media (max-width: 800px) {
+  .container .booking {
+    width: 90%;
+    margin: 1rem auto;
+  }
+}
 .container .booking .bookingimg {
   width: 48%;
   display: block;
+}
+@media (max-width: 800px) {
+  .container .booking .bookingimg {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
 }
 .container .booking .bookingimg img {
   width: 100%;
@@ -265,10 +252,19 @@ header nav a:hover {
   justify-content: space-around;
   margin: 0 auto 3rem auto;
   width: 98%;
-  height: 14rem;
+}
+@media (max-width: 800px) {
+  .container .booking .top-row {
+    flex-wrap: wrap;
+  }
 }
 .container .booking .top-row .top-row-text {
   width: 48%;
+}
+@media (max-width: 800px) {
+  .container .booking .top-row .top-row-text {
+    width: 100%;
+  }
 }
 .container .booking .top-row .top-row-text h3 {
   margin-bottom: 2rem;
@@ -278,10 +274,19 @@ header nav a:hover {
   justify-content: space-around;
   margin: 0 auto 1.8rem auto;
   width: 98%;
-  height: 14rem;
+}
+@media (max-width: 800px) {
+  .container .booking .bottom-row {
+    flex-wrap: wrap;
+  }
 }
 .container .booking .bottom-row .bottom-row-text {
   width: 48%;
+}
+@media (max-width: 800px) {
+  .container .booking .bottom-row .bottom-row-text {
+    width: 100%;
+  }
 }
 .container .booking .bottom-row .bottom-row-text h3 {
   margin-bottom: 2rem;
@@ -291,28 +296,11 @@ header nav a:hover {
   display: flex;
   align-items: center;
 }
-@media (max-width: 500px) {
-  .container .save {
-    flex-direction: column;
-  }
-}
 .container .save img {
   width: 40%;
 }
-@media (max-width: 500px) {
-  .container .save img {
-    width: 60%;
-  }
-}
 .container .save div {
   margin-left: 2%;
-}
-@media (max-width: 500px) {
-  .container .save div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
 }
 .container .save div h3 {
   margin-bottom: 3%;
@@ -321,16 +309,15 @@ header nav a:hover {
 .container .save div p {
   line-height: 1.5rem;
 }
-@media (max-width: 500px) {
-  .container .save div p {
-    width: 80%;
-    margin: 2% 0;
-  }
-}
 .container .CTA {
   margin: 0 auto;
   text-align: center;
   width: 480px;
+}
+@media (max-width: 500px) {
+  .container .CTA {
+    width: 95%;
+  }
 }
 .container .CTA button {
   font-size: 3em;
