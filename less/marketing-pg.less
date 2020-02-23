@@ -3,6 +3,11 @@
         border-right: 1px solid red;
         border-left: 1px solid @hilights;
 
+        @media @mobile{
+            border-right:none;
+            border-left:none;
+        }
+
         .planner-imgs{
             display:flex; 
             justify-content: space-around;
@@ -24,7 +29,7 @@
             }// this closes img
 
         }// this closes .planner-imgs
-        
+
         .planner-text{
             margin: 3% 2%;
 
