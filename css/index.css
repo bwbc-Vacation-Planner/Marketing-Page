@@ -133,6 +133,7 @@ h3 {
   font-size: 2.6em;
 }
 p {
+  line-height: 1.5rem;
   font-size: 1.9em;
 }
 img {
@@ -190,6 +191,9 @@ header nav a:hover {
   line-height: 1.5rem;
 }
 .container .booking {
+  border-left: 3px solid red;
+  border-right: 3px solid #FF8000;
+  padding: 1.8rem 0;
   margin: 2rem 0;
 }
 .container .booking .bookingimg {
@@ -197,24 +201,40 @@ header nav a:hover {
   display: block;
 }
 .container .booking .bookingimg img {
-  max-width: 100%;
+  width: 100%;
   text-align: center;
-  object-fit: fill;
+  object-fit: cover;
+  height: 14rem;
+}
+.container .booking .bookingimg p {
+  font-size: 1rem;
 }
 .container .booking .top-row {
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-around;
+  margin: 0 auto 3rem auto;
+  width: 98%;
+  height: 14rem;
 }
 .container .booking .top-row .top-row-text {
   width: 48%;
 }
+.container .booking .top-row .top-row-text h3 {
+  margin-bottom: 2rem;
+}
 .container .booking .bottom-row {
   display: flex;
   justify-content: space-around;
+  margin: 0 auto 1.8rem auto;
+  width: 98%;
+  height: 14rem;
 }
 .container .booking .bottom-row .bottom-row-text {
   width: 48%;
+}
+.container .booking .bottom-row .bottom-row-text h3 {
+  margin-bottom: 2rem;
 }
 .container .save {
   margin: 3% 2%;
@@ -233,4 +253,8 @@ header nav a:hover {
 }
 .container .save div p {
   line-height: 1.5rem;
+}
+.container footer {
+  margin: 2rem;
+  text-align: center;
 }

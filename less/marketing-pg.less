@@ -26,28 +26,37 @@
     }
 
     .booking{
-
+        border-left: 3px solid red;
+        border-right: 3px solid @hilights;
+        padding: 1.8rem 0;
         .bookingimg{
             width:48%;
             display: block;
             img{
-                max-width: 100%;
+                width: 100%;
                 text-align: center;
-                object-fit: fill;
-                
+                object-fit: cover;
+                height: 14rem;
+            }
+            p {
+                font-size: 1rem;
             }
         }
         
         margin: 2rem 0;
         .top-row{
+            
             display: flex;
             flex-direction: row-reverse;
-            justify-content: space-around;            
+            justify-content: space-around;
+            margin: 0 auto 3rem auto;
+            width: 98%;
+            height: 14rem;
             .top-row-text{
                 
                 width: 48%;  
                 h3 {
-
+                    margin-bottom: 2rem;
                 }
 
                 p {
@@ -61,12 +70,13 @@
         .bottom-row{
             display: flex;
             justify-content: space-around;
-        
-
+            margin: 0 auto 1.8rem auto;
+            width: 98%;
+            height: 14rem;
             .bottom-row-text{
                 width:48%;
                 h3{
-                    
+                    margin-bottom: 2rem;
                 }
 
                 p {
@@ -101,11 +111,16 @@
 
     }//end save
 
+
     .CTA {
         button{
 
         }
 
     }//end .CTA
+    footer{
+        margin: 2rem;
+        text-align: center;
+    }
 
 }
