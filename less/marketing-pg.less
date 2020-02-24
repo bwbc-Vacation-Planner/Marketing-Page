@@ -1,23 +1,31 @@
 .container{
     .planner{
-        border-right: 1px solid red;
-        border-left: 1px solid @hilights;
+        .border-setting();
         
 
         @media @mobile{
-            border-right:none;
-            border-left:none;
-        }
+            .no-border(); 
+        }// this closes mobile media query inside of .planner
+
+        @media @tablet{
+            .centered-column(); 
+            .no-border();
+        }//this closes .planner
 
         .planner-imgs{
             display:flex; 
             justify-content: space-around;
             margin-top: 3%;
 
+            @media @tablet{
+                width:90%;
+                .border-setting(); 
+            }// this closes tablet media query inside of .planner-imgs
+
             @media @mobile{
                 flex-direction: column;
                 align-items:center;
-            }
+            }// this closes mobile media query inside of .planner-imgs
 
             img{
                 width: 30%;
@@ -25,32 +33,39 @@
                 @media @mobile{
                     margin: 3% 0;
                     width: 50%;
-                }
+                }//this closes mobile media query inside of img
 
             }// this closes img
 
         }// this closes .planner-imgs
 
         .planner-text{
-            margin: 3% 2%;
+            margin: 0 auto;
+
+            @media @tablet{
+                width:90%;
+                .border-setting(); 
+            }
 
             @media @mobile{
-                display:flex; 
-                flex-direction: column;
-                align-items:center;
+                .centered-column(); 
             }
 
             h2{
                 text-decoration: underline;
                 font-size: 2rem;
                 margin-bottom: 2%;
+                margin: 2% auto;
+                width:97%;
             }
             p {
                 line-height: 1.5rem;
-
+                margin: 2% auto;
+                width:97%;
                 @media @mobile{
                     width:80%;
                     margin:2% 0;
+                    width:97%;
                 }
 
             }
@@ -59,8 +74,8 @@
 
     .booking{
         
-        border-left: 3px solid red;
-        border-right: 3px solid @hilights;
+        border-left: 2px solid red;
+        border-right: 2px solid @hilights;
         padding: 1.8rem 0;
         @media @tablet{
             width: 90%;
@@ -145,8 +160,11 @@
         display:flex;
         align-items:center;
 
-        @media @mobile{
+
+        @media @tablet{
+            margin: 3% 0;
             flex-direction:column;
+
         }
 
         img{
@@ -156,15 +174,22 @@
                 width:60%;
             }
 
+            @media @tablet{
+                width: 50%;
+            }
         }
+
+    
 
         div {
             margin-left: 2%;
 
             @media @mobile{
-                display:flex;
-                flex-direction:column; 
-                align-items:center;
+                .centered-column(); 
+            }
+
+            @media @tablet{
+                width: 87%;
             }
 
             h3{
@@ -216,6 +241,8 @@
             }
         }
     }//end .CTA
+
+    
     footer{
         margin: 2rem;
         text-align: center;
